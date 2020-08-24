@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Casse Brique HTML/JS</title>
+		<style>
+			* { padding: 0; margin: 0; }
+			canvas { background: #eee; display: block; margin: 0 auto; }
+		</style>
+	</head>
+	<body>
+		<canvas id="CanvasPerso" width="480" height="320"></canvas>
+		
+		<script>
+			var canvas = document.getElementById("CanvasPerso");
+			var ctx = canvas.getContext("2d");
+			ctx.beginPath();
+			ctx.rect(20, 40, 50, 50);
+			//variable qui stock la couleur
+			ctx.fillStyle = "red";
+			//application de la couleur
+			ctx.fill();
+			ctx.closePath();
+			//on ferme la balise pour que les parametres du premier élément n'affecte pas le deuxieme et evidement on ouvre a nouveau le beginPath.
+			ctx.beginPath();
+			ctx.arc(240, 160, 20, 0, Math.PI*2, false);
+			ctx.fillStyle = "green";
+			ctx.fill();
+			//stockage de la couleu de contour
+			ctx.strokeStyle = "blue";
+			//appkication de la couleur de contour
+			ctx.stroke();
+			ctx.closePath();
+		</script>
+	</body>
+</html>
