@@ -1,0 +1,25 @@
+* { 
+    padding: 0; 
+    margin: 0; 
+}
+
+canvas { 
+    background: #eee; 
+    display: block; 
+    margin: 55px auto; 
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 35px;
+}
+
+body {
+    background-color: #353a57;
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
